@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f077baeb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo-header">
+                <a href="index.html">FastRoute</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="EsconderMenu()"></i>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Producto</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="MostrarMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Bienvenido a FastRoute</h1>
+        <p>La aplicación de rutas para choferes y peatones que te ayuda a calcular el camino más rápido y seguro hacia tu destino</p>
+        <a href="" class="download-btn">Obtenlo ya!</a>
+    </div>
+    </section>
+
+
+    <!--- MEJOR SE CAMBIARA POR BENEFICIOS, LA OTRA SECCION MOSTRARA FUNCIONALIDADES--->   
+    <section class="producto">
+        <h1>Beneficios</h1>
+        <p>Aprovecha los múltiples beneficios al usar la app de FastRoute</p>
+
+        <div class="row">
+            <div class="producto-col">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus 
+                nulla at. Adipiscing bibendum est ultricies integer quis auctor elit sed.
+                </p>
+            </div>
+            <div class="producto-col">
+                <h3>Senialiacion</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus 
+                nulla at. Adipiscing bibendum est ultricies integer quis auctor elit sed.
+                </p>
+            </div>
+            <div class="producto-col">
+                <h3>Comparte tus rutas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus 
+                nulla at. Adipiscing bibendum est ultricies integer quis auctor elit sed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+   
+    
+     <!---Funcionalidades--->   
+     <section class="funcionalidades">
+        <h1>Funcionalidades</h1>
+        <p>Te presentamos las principales funcionalidades a las que podrás acceder en la app de FastRoute</p>
+        <div class="row">
+            <div class="funcion-col">
+                <img src="images/trazado-removebg-preview.png">
+                <div class="layer">
+                    <h3>Trazado</h3>
+                    <p>Obten las rutas más seguras y rápidas</p>
+                </div>
+            </div>
+            <div class="funcion-col">
+                <img src="images/alertas-removebg-preview.png">
+                <div class="layer">
+                    <h3>Alertas</h3>
+                    <p>Accede a información sobre las rutas</p>
+                </div>
+            </div>
+            <div class="funcion-col">
+                <img src="images/guardar-removebg-preview.png">
+                <div class="layer">
+                    <h3>Guarda</h3>
+                    <p>Guarda tus rutas preferidas</p>
+                </div>
+            </div>
+            <div class="funcion-col">
+                <img src="images/compartir-removebg-preview.png">
+                <div class="layer">
+                    <h3>Comparte</h3>
+                    <p>Comparte con tus contactos tu ruta</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="contact-us">
+        <h1>Contacto</h1>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-home"></i>
+                    <span>
+                        <h5>Mal. Balta 626, Miraflores</h5>
+                        <p>Lima, Peru</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+51 987 654 321</h5>
+                        <p>Lunes a viernes</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>contacto@fastroute.com</h5>
+                        <p>Envíanos un correo</p>
+                    </span>
+                </div>
+            </div>
+     <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Ingresa tu nombre" required> 
+                <input type="email" placeholder="Ingresa tu correo" required> 
+                <input type="text" placeholder="Ingresa tu Mensaje" required> 
+                <textarea rows="6" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btnEnviar">Enviar</button>
+            </form>
+     </div>
+        </div>
+     </section>
+
+     <section class="footer">
+        <h1>About us</h1>
+     </section>
+
+
+    <!---JS TOGGLE MENU--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function MostrarMenu(){
+            navLinks.style.right = "0";/*Se muestra en pantalla, en style.css en linea 123 se oculta con -200px*/
+        }
+        function EsconderMenu(){
+            navLinks.style.right = "-200px"/*Se despliega fuera de la pantalla, invisible para el usuario*/;
+        }
+    </script>
+
+
+</body>
+</html>
