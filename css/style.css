@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/fondo.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/fondo.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -262,6 +262,84 @@ h3{
     bottom: 49%;
     opacity: 1;
 }
+/*Se anadio estilo en el css para la parte del about*/
+/*ABOUT US*/
+
+.footer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #fff;
+}
+
+.about img {
+    height: auto;
+    width: 420px;
+}
+
+.text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h1{
+    color: #0B2161;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+}
+
+.text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background: #0B2161;
+    color: #fff;
+    text-decoration: none;
+    border: 5px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #0B2161;
+    cursor: pointer;
+    color: black;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .main{
+        flex-direction: column;
+    }
+}
+
+
 
 /*CONTACTO*/
 .contact-us{
