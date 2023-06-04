@@ -87,6 +87,10 @@ nav{
     color: #E6E6E6;
 }
 
+.text-box a span {
+    margin-left: 5px;
+}
+
 .download-btn{
     display: inline-block;
     text-decoration: none;
@@ -142,6 +146,17 @@ nav .fa-solid{
     }
 }
 
+.video {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.video h1{
+    font-size: 36px;
+    font-weight: 600;
+}
 /*-------PRODUCTO----------*/
 .producto{
     width: 80%;
@@ -345,18 +360,27 @@ button:hover {
     transition: 1s;
 }
 /*FALTA QUE LA PARTE DEL ABOUT SEA RESPONSIVE*/
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 16px;
+@media (max-width: 768px) {
+    .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    .main{
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
         flex-direction: column;
+        align-items: center;
     }
-    .text{
-        width: auto;
-        margin-top: 0px;
+
+    .text {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-    
 }
 /*Equipo*/
 
