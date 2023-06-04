@@ -345,7 +345,7 @@ button:hover {
     transition: 1s;
 }
 /*FALTA QUE LA PARTE DEL ABOUT SEA RESPONSIVE*/
-@media(max-width: 800px){
+@media(max-width: 700px){
     .text-box h1{
         font-size: 16px;
     }
@@ -448,7 +448,7 @@ button:hover {
 
 }
 
-@media(max-width: 1240px){
+@media(max-width: 700px){
     .team{
         width: 100%;
         height: auto;
@@ -456,7 +456,7 @@ button:hover {
     }
 
     .center h1{
-        font-size: 3.2rem;
+        font-size: 20px;
     }
 }
 
