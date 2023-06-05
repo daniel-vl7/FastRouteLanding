@@ -156,6 +156,11 @@ nav .fa-solid{
 .video h1{
     font-size: 36px;
     font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.video iframe{
+    margin-bottom: 20px;
 }
 /*-------PRODUCTO----------*/
 .producto{
