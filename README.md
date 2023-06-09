@@ -6,3 +6,4 @@ Gutiérrez Zumaeta, Manuel Alonso
 Ponce Boza, Marco André
 Valverde López, Josue Daniel
 profesora: Silvia Campos
+Universidad: Universidad Peruana de Ciencias Aplicadas
