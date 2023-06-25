@@ -371,7 +371,7 @@ button:hover {
     background: #010922;
     transition: 1s;
 }
-/*FALTA QUE LA PARTE DEL ABOUT SEA RESPONSIVE*/
+
 @media (max-width: 768px) {
     .about {
         padding-top: 50px;
